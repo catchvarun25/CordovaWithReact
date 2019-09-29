@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.sample"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.example.sample"
     }
   },
   "dependent_plugins": {}

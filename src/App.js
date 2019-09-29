@@ -3,10 +3,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const successHandler = (imageData) => {
+    console.log("Image Data: " + imageData)
+  };
+  const failureHandler = (error) => {
+    console.log("Error: " + error)
+  };
+
   const openCameraHandler = () => {
     console.log("Opening Camera...");
-    alert("Opening Camera...")
-  }
+    console.log("Navigator: " + navigator);
+    console.log("Camera: " + navigator.camera);
+    navigator.camera.getPicture(successHandler, failureHandler);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
